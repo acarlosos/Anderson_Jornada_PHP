@@ -10,6 +10,10 @@ $pessoas = [
 ];
 
 $aula->podeIrWhile(10);
+$aula->podeIrDoWhile(4);
+$aula->podeIrFor(2);
+$aula->podeIrForeach($pessoas);
+$aula->ler('teste.txt');
 
 class Aula4 
 {
@@ -54,13 +58,11 @@ class Aula4
 		foreach ($pessoas as $idade => $nome) {
 			echo "$nome tem $idade anos de idade.<br>";
 		}
-
-
 	}
 
-	public function ler()
+	public function ler($file = 'teste.txt')
 	{
-		$nomes = file('teste.txt');
+		$nomes = file($file);
 		foreach ($nomes as $nome) {
 			echo "Bem vindo $nome.<br>";
 		}
