@@ -14,7 +14,10 @@ $aula->podeIrDoWhile(4);
 $aula->podeIrFor(2);
 $aula->podeIrForeach($pessoas);
 $aula->ler('teste.txt');
-
+/**
+ * Aula 4
+ * Estrutua de repetição
+ */
 class Aula4 
 {
 	public function podeIrWhile($idade = 1)
